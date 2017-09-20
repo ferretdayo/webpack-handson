@@ -1,4 +1,4 @@
-let taxCalc = require('./taxCalculator')
+let taxCalc = require('./tax-calculator')
 
 let originalPrice = 1000
 let tax = 1.08
