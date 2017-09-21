@@ -74,12 +74,13 @@ module.exports = __webpack_require__(1);
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-let taxCalc = __webpack_require__(2)
+let taxCalculator = __webpack_require__(2)
 
 let originalPrice = 1000
 let tax = 1.08
-let price = taxCalc(originalPrice, tax)
+let price = taxCalculator(originalPrice, tax)
 document.getElementById('content').innerHTML = price + '円'
+
 
 /***/ }),
 /* 2 */
@@ -88,6 +89,7 @@ document.getElementById('content').innerHTML = price + '円'
 module.exports = function(price, tax) {
     return price * tax
 }
+
 
 /***/ })
 /******/ ]);
